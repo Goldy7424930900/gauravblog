@@ -1,0 +1,42 @@
+<%- include("partials/header") %>
+
+<div class="topnav">
+    <a id="homeNav" class="active" href="/"><i class="fas fa-blog"></i> Get Blogged</a>
+    <a href="/users/newblog">New Post</a>
+    <a id="signinLink" href="/users/login">Sign in</a>
+</div>
+
+<h1 class="tagline">A Blogger who is also a <br>Coder :)</h1>
+
+<% let x = Math.floor((Math.random() * 10)); %> 
+
+<h3 id="quotes"><%= blogQuotes[x][0] %><br>- By <%= blogQuotes[x][1] %></h3>
+
+<div class="regisbtnDiv">
+    <a class="registerBtn" href="/users/register">Get started</a><br>
+    Already have an account? <a href="/users/login">Sign in.</a>
+</div>
+<br><hr><br>
+<div class="home-container">
+    <table id="largeScreenTable">
+        <tr>
+            <td><img src="/images/img2.jfif" alt=""></td>
+            <td><h4>It's free and always will be</h4></td>
+        </tr>
+        <tr>
+            <td><h4>Growing positive community. Read, write blogs anytime from anywhere.</h4></td>
+            <td align="right"><img id="" src="https://images.unsplash.com/photo-1645528098871-8478bf34ccb1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8NDJ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt=""></td>
+        </tr>
+        <tr>
+            <td><img src="/images/img3.jfif" alt=""></td>
+            <td><h4>Lot's of categories to choose from. Technology, travel, food, science, relationships, video games, politics and many more.</h4></td>
+        </tr>
+    </table>
+    
+    <br><hr><br>
+    <div class="regisbtnDiv">
+        <a class="registerBtn" href="/users/register">Get started</a>
+    </div>
+</div>
+
+<%- include("partials/footer") %>
